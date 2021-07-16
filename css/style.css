@@ -1,0 +1,385 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family:'Kanit', Aral, sans-serif; 
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+p{
+	margin: 0;
+	padding: 0;
+	font-size: 1.2em;
+}
+
+
+/*header-header*/
+.header{
+	background: url(../images/mountain.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; 
+	color: #fff;
+	padding: 30px 50px;
+	position: relative;
+}
+.header:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.3);
+  z-index: 2;
+ }
+
+.header_navigation{
+	display: flex;
+	position: relative;
+  z-index: 3;
+}
+
+.logo{
+	font-size: 2em;
+	font-weight: bold;
+	text-decoration: overline;	
+}
+.h_nav{
+	padding-top: 12px; 
+	margin-left: 40px;
+}
+.h_nav ul{
+	list-style-type: none;	
+}
+.h_nav li{
+	display: inline;
+	padding-right: 30px;
+}
+.h_nav a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.2em;
+	transition: 0.4s;
+}
+.h_nav a:hover{
+	text-decoration: overline;
+}
+.h_nav a:active{
+	color: #DDD;
+}
+/*header-content*/
+.header_content{
+	padding-top: 150px; 
+	padding-bottom: 200px; 
+	position: relative;
+  	z-index: 3;
+ 	text-align: center;
+}
+/*.header_headline{
+	text-align: center;
+}*/
+.header_text{
+	padding: 25px 300px;
+}
+.button_header{
+	border: 0.1px solid #FFF;
+	border-radius: 18px;
+	padding: 13px;
+	margin: 20px 20px;
+	display: inline-block;
+	width: 120px;
+
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.1em;
+	transition: 0.5s;
+}
+
+.button_header:hover{
+	background: rgba(62, 131, 192, 0.9); /*#3E83C0*/
+	color: #D1D1D1FF;
+	border: 0;
+}
+
+.button_header:active{
+	background: #2C5E8A;
+}
+
+.lheader_btn:hover{
+	background: rgba(60, 157, 56, 1); /*#3E83C0*/
+	color: #D1D1D1FF;
+	border: 0;
+}
+
+.lheader_btn:active{
+	background: #298E2A;
+}
+/*section 1*/
+
+.sec1{
+	padding: 140px 0;
+}
+
+.sec1_content{
+	text-align: center;
+}
+
+.mount_wrapper{
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.mount{
+	width: 360px;
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 100px;
+}
+
+.hiking_icon{
+	background-image: url(../images/hiking.png);
+}
+.map_icon{
+	background-image: url(../images/map.png);
+}
+
+.backp_icon{
+	background-image: url(../images/backpack.png);
+}
+
+
+
+/*h2 for sections*/
+.sec_h2{
+	font-size: 2em;
+}
+.sec_h3{
+	font-size: 1.2em;
+	margin-bottom: 15px;
+}
+
+/*section 2*/
+.sec2{
+	padding: 100px 50px;
+	background: #769a9a;
+	color: #fff;
+}
+.sec2_content{
+	text-align: center;
+}
+.pic_wrapper{
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+}
+.pic_blocks{
+	display: inline-flex;
+	justify-content: space-around;
+	margin-bottom: 50px;
+}
+
+.block_rev{
+	flex-direction: row-reverse;
+}
+.mount_pic{
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 7px 11px -3px #000000; 
+	box-shadow: 5px 7px 11px -3px #000000;
+	transform: rotate(3deg);
+}
+.left_pic{
+	-webkit-box-shadow: -6px 7px 12px -3px #000000; 
+ 	box-shadow: -6px 7px 12px -3px #000000;
+ 	transform: rotate(-3deg);
+}
+
+.text_content{
+	width: 650px;
+	padding: 100px 0px;
+}
+
+/*footer*/
+.footer{
+	padding: 50px 80px;
+	background: #000000cf;
+	color: #fff;
+}
+.foot_wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+.foot_contacts{
+	margin-left: 50px;
+}
+
+.sn_pic{
+	height: 40px;
+	width: 40px;
+	margin: 5px;
+}
+
+/*responsives*/
+/*992-1200*/
+@media screen and (max-width:  1200px){
+	/*Header*/
+	.header_text{
+	  padding: 25px 50px;
+  }
+
+  /*section1*/
+  .mount_wrapper{
+  	padding-top: 20px;
+  	flex-direction: column;
+  }
+  .mount{
+  	margin: 30px auto;
+  	width: 450px;
+  }
+  /*section2*/
+  .pic_blocks{
+		display: flex;
+		flex-direction: column;
+		/*margin-bottom: 50px;*/
+	}
+  .mount_pic{
+		transform: rotate(0deg);
+		width: 600px;
+    margin: 0 auto;
+	}
+	.text_content {
+    padding: 50px 0px;
+    margin: 0 auto;
+	}
+	
+}
+
+/*768-992*/
+@media screen and (max-width:  992px){
+
+  /*section2*/
+	.text_content {
+    font-size: 1em;
+	}
+	.sec_h3 {
+    font-size: 1.5em;
+	}
+}
+
+/*576-768*/
+@media screen and (max-width:  768px){
+
+	/*header*/
+	.header_text{
+		font-size: 14px;
+		padding: 25px 25px;
+
+	}
+
+	/*section2*/
+	 .sec2{
+	 	padding: 50px 50px;
+	 }
+	 .mount_pic{
+	 	width: 400px;
+	 }
+
+	 .text_content {
+    	width: 400px;
+    	font-size: 13px;
+      	padding: 25px 0px;
+    }
+
+    /*footer*/
+    .footer{
+    	padding: 30px 25px
+    }
+    .foot_contacts {
+    	margin-left: 0px;
+    }
+}
+
+/*320 - 576*/
+@media screen and (max-width:  576px){
+	.header{
+		padding: 20px 15px;
+	}
+	.header_navigation{
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	.logo{
+		margin: 0 auto;
+	}
+	.h_nav{
+		margin: 0 auto;
+	}
+	.h_nav li{
+		padding: 0 10px;
+	}
+	.h_nav a{
+		font-size: 1.1em;
+	}
+	.header_content{
+		padding-top: 100px;
+		padding-bottom: 150px;
+	}
+	.header_text{
+		font-size: 10px;
+		padding: 15px 0;
+		text-align: justify all;
+	}
+	.button_header{
+		display: none;
+	}
+	/* section 1 */
+	.sec1{
+		padding: 80px 0;
+		
+	}
+	.mount{
+		background-position: bottom center;
+		padding-bottom: 95px;
+		padding-top: 0px;
+		width: 90px;
+	}
+	.mount p{
+		display: none;
+	}
+
+	/* section 2 */
+
+	.sec2{
+		padding: 20px 10px;
+	}
+	.pic_blocks{
+		flex-direction: column-reverse;
+	}
+	.mount_pic{
+		width: 250px;
+	}
+	.text_content {
+		width: 250px;
+	}
+	.text_content p{
+		display: none;
+	}
+
+	/* footer */
+	.foot_contacts{
+		font-size: 10px;;
+
+	}
+	.sn_pic{
+		width: 20px;
+		height: 20px;
+	}
+}
+
+
